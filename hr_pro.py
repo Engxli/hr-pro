@@ -95,9 +95,9 @@ def main():
             case "4":
                 add_to_list("manager")
             case _:
-                print("\n-----------------")
+                print("\n------------------")
                 print("There is no such option!")
-                print("-----------------\n")
+                print("------------------\n")
 
 
         if(user_selection == 5):
