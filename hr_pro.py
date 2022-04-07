@@ -22,10 +22,9 @@ class Employee:
 class Manager(Employee):
     #Manager class here
     def __init__(self, name, age, salary, employment_year, bonus_percentage):
-        self.name = name
-        self.age = age
-        self.salary = salary
-        self.employment_year = employment_year
+        Employee.__init__(self, name, age, salary, employment_year)
+        self.bonus_percentage = bonus_percentage
+
         self.bonus_percentage = bonus_percentage
 
     def get_bonus(self):
